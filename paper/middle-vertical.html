@@ -5,7 +5,10 @@
     <title>Title</title>
 </head>
 <style>
-
+  *{
+      margin: 0px;
+      padding: 0px;
+  }
     p.list-title{
         border: solid 1px red;
         height: 50px;
@@ -26,17 +29,13 @@
         background-image: url(./img/icon-img-list-a.png);
         vertical-align: middle;
     }
+
+    /*兄弟元素加line-height 或者 display: inline-block;*/
     .list-title span {
         height: 100%;
         line-height: 50px;
        /* display: inline-block;*/
         vertical-align: middle;
-    }
-
-    section.nav-head p.page-search>* {
-        vertical-align: middle;
-        font-weight: bold;
-        /* line-height: 22px; */
     }
 
     .icon-img-search {
@@ -55,7 +54,9 @@
         line-height: 45px;
     }
 
+  /*给父元素加 line-height */
     ul, li {
+        line-height: 50px;
         float: left;
         margin-right: 5px;
         list-style: none;
