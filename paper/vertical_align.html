@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+
+    /* 图片垂直居中 方法 1 */
+
+   /*
+    #parent {
+        border: solid 1px red;
+        line-height: 200px;
+    }
+
+    #parent img {
+        vertical-align: middle;
+    }*/
+
+
+
+    /* 图片垂直居中 方法二*/
+   /* #parent {
+             display: table-cell;
+             border: solid 1px red;
+             height: 300px;
+             vertical-align:middle;
+            }
+
+    #parent img {
+        vertical-align: middle;
+    }*/
+
+    /* 图片垂直居中 方法三*/
+   /* #parent {
+        line-height: 200px;
+        position:relative;
+        width:200px;
+        height:200px;
+        border: solid 1px red;
+    }
+    #parent span{
+        margin-left:30px;
+    }
+
+    #parent img {
+        position:absolute;
+        top:0;
+        bottom:0;
+        margin:auto;
+    }*/
+</style>
+<body>
+
+
+
+<div id="parent">
+    <img src="./img/icon-img-list-a.png" alt="" /> <span>121hehehe</span>
+</div>
+
+
+<!--方法四-->
+<div style="height:400px;line-height:400px; border: solid 1px blue">
+    <img src="./img/icon-img-list-a.png" align="absmiddle"/>
+</div>
+
+</body>
+
+</html>
